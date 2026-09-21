@@ -1,0 +1,100 @@
+# Real vehicle inventory — model names as confirmed in the client's own reference designs.
+# No year/price/mileage/transmission/fuel/seats/condition is asserted since none has been
+# confirmed by the client. Every listing uses "Contact for Price" and omits any spec field
+# that has not been independently verified.
+# crop: per-photo object-position hint for the 4:3 card crop (None = default center)
+
+VEHICLES = [
+    {
+        "id": "ford-ecosport",
+        "img": "ford_ecosport_blue.jpg",
+        "crop": "mid-low",
+        "name": "Ford EcoSport",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "jeep-renegade",
+        "img": "jeep_renegade_black.jpg",
+        "crop": "mid-low",
+        "name": "Jeep Renegade",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "toyota-sienta-brown",
+        "img": "toyota_mpv_brown.jpg",
+        "crop": None,
+        "name": "Toyota Sienta",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "toyota-fielder",
+        "img": "toyota_wagon_black.jpg",
+        "crop": None,
+        "name": "Toyota Fielder",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "mazda-axela",
+        "img": "mazda3_silver.jpg",
+        "crop": "low",
+        "name": "Mazda Axela",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "nissan-nv100",
+        "img": "nissan_van_silver.jpg",
+        "crop": "high",
+        "name": "Nissan NV100",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "toyota-sedan",
+        "img": "toyota_sedan_white.jpg",
+        "crop": None,
+        "name": "Toyota Sedan",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "toyota-passo",
+        "img": "toyota_passo_red_rear.jpg",
+        "crop": None,
+        "name": "Toyota Passo",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+    {
+        "id": "toyota-sienta-green",
+        "img": "toyota_mpv_green.jpg",
+        "crop": None,
+        "name": "Toyota Sienta",
+        "transmission": None,
+        "fuel": None,
+        "seats": None,
+        "condition": None,
+    },
+]
+
+FEATURED_VEHICLE = VEHICLES[0]  # Ford EcoSport
