@@ -8,10 +8,7 @@ from vehicle_data import VEHICLES
 def vehicle_card(v):
     crop_attr = f' data-crop="{v["crop"]}"' if v["crop"] else ""
     specs = []
-    if v["transmission"]:
-        specs.append(f'<span>{icon("gear")} {v["transmission"]}</span>')
-    if v["fuel"]:
-        specs.append(f'<span>{icon("fuel")} {v["fuel"]}</span>')
+
     specs_html = "".join(specs)
     return f'''<div class="vehicle-card">
       <div class="thumb">
@@ -22,7 +19,7 @@ def vehicle_card(v):
         <div class="specs">{specs_html}</div>
         <div class="price-link-row">
           <span class="price">Contact for Price</span>
-          <a href="vehicle-{v['id']}.html" aria-label="View details">{icon('arrow-right')}</a>
+          <a href="{v['fb']}" target="_blank" rel="noopener" aria-label="View details on Facebook">{icon('arrow-right')}</a>
         </div>
       </div>
     </div>'''

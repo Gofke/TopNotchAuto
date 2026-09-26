@@ -20,7 +20,6 @@ PAGE_SCRIPTS = [
     "page_about.py",
     "page_request.py",
     "page_contact.py",
-    "page_details.py",
     "page_sold.py",
 ]
 

@@ -10,10 +10,7 @@ LATEST = VEHICLES[:4]  # Jeep, Sienta(brown), Fielder, Axela — matches referen
 def vehicle_card(v):
     crop_attr = f' data-crop="{v["crop"]}"' if v["crop"] else ""
     specs = []
-    if v["transmission"]:
-        specs.append(f'<span>{icon("gear")} {v["transmission"]}</span>')
-    if v["fuel"]:
-        specs.append(f'<span>{icon("fuel")} {v["fuel"]}</span>')
+
     specs_html = "".join(specs)
     return f'''<div class="vehicle-card">
       <div class="thumb">
@@ -24,7 +21,7 @@ def vehicle_card(v):
         <div class="specs">{specs_html}</div>
         <div class="price-link-row">
           <span class="price">Contact for Price</span>
-          <a href="vehicle-{v['id']}.html" aria-label="View details">{icon('arrow-right')}</a>
+          <a href="{v['fb']}" target="_blank" rel="noopener" aria-label="View details on Facebook">{icon('arrow-right')}</a>
         </div>
       </div>
     </div>'''
@@ -55,13 +52,10 @@ body = f'''
               <div class="info">
                 <h3>{fv['name']}</h3>
                 <div class="specs-row">
-                  {'<span>' + icon('gear') + ' ' + fv['transmission'] + '</span>' if fv['transmission'] else ''}
-                  {'<span>' + icon('fuel') + ' ' + fv['fuel'] + '</span>' if fv['fuel'] else ''}
-                  {'<span>' + icon('seat') + ' ' + fv['seats'] + '</span>' if fv['seats'] else ''}
                 </div>
                 <div class="price">Contact for Price</div>
                 <div class="cta-row">
-                  <a href="vehicle-{fv['id']}.html" class="btn btn-red">{icon('search')} View Details</a>
+                  <a href="{fv['fb']}" target="_blank" rel="noopener" class="btn btn-red">{icon('search')} View Details</a>
                   <a href="contact.html" class="btn btn-outline-dark">{icon('doc')} Ask About This Vehicle</a>
                 </div>
               </div>
