@@ -189,7 +189,7 @@ VEHICLES = [
         "id": "exquisite-red",
         "img": "exquisite-red.jpg",
         "crop": None,
-        "name": "Exquisite",
+        "name": "2021 Peugeot 2008",
         "fb": "https://web.facebook.com/story.php?story_fbid=1690006033130525&id=100063634327375",
     },
     {
